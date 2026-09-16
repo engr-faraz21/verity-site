@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Sign-Up | Verity Life Solutions Ltd.</title>
+<meta name="description" content="Contact Verity Life Solutions Ltd. or request a consultation. Optionally opt in to receive text messages about your appointments and requests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Spectral:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="mark">Verity <b>Life Solutions</b></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="main" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" aria-current="page">Contact &amp; Sign-Up</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Contact &amp; sign-up</p>
+      <h1>Request a consultation</h1>
+      <p class="lead">Fill out the form below and a member of our team will reach out. There's no cost and no obligation to start a conversation.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="grid two" style="align-items:start">
+
+        <!-- Contact details -->
+        <div>
+          <h2>Reach us directly</h2>
+          <ul class="info-list">
+            <li><div class="lab">Text or phone</div><div class="val"><a href="tel:1-587-507-4545">1-587-507-4545</a></div></li>
+            <li><div class="lab">Email</div><div class="val"><a href="mailto:sarbloh.gill@veritylifesolutions.com">sarbloh.gill@veritylifesolutions.com</a></div></li>
+            <li><div class="lab">Office</div><div class="val">230 · 9715 Horton Road SW<br>Calgary, AB T2V 2X5, Canada</div></li>
+            <li><div class="lab">Hours</div><div class="val">Monday–Friday, 9:00 AM–5:00 PM MT</div></li>
+          </ul>
+          <p style="color:var(--muted);font-size:.92rem">You can also find us on
+            <a href="https://www.facebook.com/sarbloh.gill" target="_blank" rel="noopener">Facebook</a>,
+            <a href="https://www.instagram.com/sarblohgill/" target="_blank" rel="noopener">Instagram</a>, and
+            <a href="https://www.linkedin.com/in/sarbloh-gill-5b8ab1190/" target="_blank" rel="noopener">LinkedIn</a>.
+          </p>
+        </div>
+
+        <!-- Opt-in form -->
+        <div>
+          <form class="form-card" id="optin-form" novalidate>
+            <h3 style="margin-top:0">Send us your details</h3>
+
+            <div class="row2">
+              <div class="field">
+                <label for="fname">First name</label>
+                <input id="fname" name="fname" type="text" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="lname">Last name</label>
+                <input id="lname" name="lname" type="text" autocomplete="family-name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(587) 000-0000" required>
+            </div>
+
+            <div class="field">
+              <label for="message">How can we help? <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+              <textarea id="message" name="message" rows="3"></textarea>
+            </div>
+
+            <!-- Consent checkbox 1: TRANSACTIONAL (optional) -->
+            <div class="consent">
+              <input type="checkbox" id="consent-transactional" name="consent-transactional">
+              <label for="consent-transactional">
+                <strong>Transactional messages <span class="optional-tag">Optional</span></strong><br>
+                By checking this box, I consent to receive transactional messages related to my account, orders, or services I have requested from Verity Life Solutions Ltd. These messages may include reminders, order confirmations, and account notifications, among others. Message frequency may vary. Message &amp; Data rates may apply. Reply HELP for help or STOP to opt out.
+              </label>
+            </div>
+
+            <!-- Consent checkbox 2: MARKETING (optional, separate) -->
+            <div class="consent">
+              <input type="checkbox" id="consent-marketing" name="consent-marketing">
+              <label for="consent-marketing">
+                <strong>Marketing messages <span class="optional-tag">Optional</span></strong><br>
+                By checking this box, I consent to receive marketing and promotional messages, including special offers, discounts, and new product updates, among others, from Verity Life Solutions Ltd. Message frequency may vary. Message &amp; Data rates may apply. Reply HELP for help or STOP to opt out.
+              </label>
+            </div>
+
+            <!-- Legal links placed SEPARATELY, below the checkboxes (not inside them) -->
+            <p class="legal-links">
+              For details on how we handle your information, see our
+              <a href="privacy-policy.html">Privacy Policy</a> and
+              <a href="terms.html">Terms &amp; Conditions</a>.
+            </p>
+
+            <button class="btn" type="submit">Submit request</button>
+            <p class="form-note" style="margin-top:14px">Consent to receive text messages is optional and is not a condition of any purchase or service. You can opt out at any time by replying STOP, or get help by replying HELP.</p>
+          </form>
+
+          <!-- Single, clear confirmation shown after submit (no second opt-in page) -->
+          <div class="thankyou" id="thankyou" role="status" aria-live="polite">
+            <h3>Thank you — we've received your request</h3>
+            <p>A member of the Verity Life Solutions team will be in touch shortly. If you'd like, you can also call or text us directly at <a href="tel:1-587-507-4545">1-587-507-4545</a>.</p>
+            <p style="margin-bottom:0;color:var(--muted);font-size:.9rem">If you opted in to text messages, standard message and data rates may apply. Reply STOP to opt out or HELP for help at any time.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap narrow prose">
+      <h2>About our text messages</h2>
+      <p>Text messaging is completely optional. If you check a consent box above, Verity Life Solutions Ltd. may send you text messages for the purpose you selected — for example, appointment confirmations, reminders, and follow-ups about a request you made.</p>
+      <ul>
+        <li><strong>Message frequency</strong> varies based on your interactions with us.</li>
+        <li><strong>Message and data rates</strong> may apply, depending on your mobile carrier and plan.</li>
+        <li><strong>To opt out</strong> at any time, reply <strong>STOP</strong>. To get help, reply <strong>HELP</strong>.</li>
+        <li><strong>Your mobile information</strong> is never shared with third parties or affiliates for marketing or promotional purposes. See our <a href="privacy-policy.html">Privacy Policy</a>.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<div class="disclaimer">
+  <div class="wrap">
+    <p>Verity Life Solutions Ltd. provides financial education and coaching. We do not provide investment, tax, or legal advice and do not sell securities or guarantee any financial result. Insurance products are arranged through licensed advisors and carriers.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Verity Life Solutions Ltd.</h4>
+        <p style="color:#cdd6cd">A financial education and coaching firm based in Calgary, Alberta, serving clients across Canada.</p>
+        <div class="socials" style="margin-top:10px">
+          <a href="https://www.facebook.com/sarbloh.gill" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/sarblohgill/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/in/sarbloh-gill-5b8ab1190/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a class="fl" href="tel:1-587-507-4545">Text / Phone: 1-587-507-4545</a>
+        <a class="fl" href="mailto:sarbloh.gill@veritylifesolutions.com">sarbloh.gill@veritylifesolutions.com</a>
+        <span class="fl">230 · 9715 Horton Road SW<br>Calgary, AB T2V 2X5</span>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <a class="fl" href="about.html">About</a>
+        <a class="fl" href="services.html">Services</a>
+        <a class="fl" href="faq.html">FAQ</a>
+        <a class="fl" href="contact.html">Contact &amp; Sign-Up</a>
+        <a class="fl" href="privacy-policy.html">Privacy Policy</a>
+        <a class="fl" href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Verity Life Solutions Ltd. All rights reserved.</span>
+      <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
