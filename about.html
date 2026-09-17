@@ -14,7 +14,7 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html"><span class="mark">Verity <b>Life Solutions</b></span></a>
+    <a class="brand" href="index.html"><img src="logo.png" alt="Verity Life Solutions"></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
     <nav class="main" aria-label="Primary">
       <a href="index.html">Home</a>
@@ -52,38 +52,14 @@
         <p>Real people, real names. Here are some of the team members you may work with or hear from.</p>
       </div>
       <div class="team">
-        <div class="person">
-          <div class="avatar" data-initials="SG"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2025/09/sarblosh.jpg" alt="Sarbloh Gill" loading="lazy"></div>
-          <div class="name">Sarbloh Gill</div><div class="role">Founder</div>
-        </div>
-        <div class="person">
-          <div class="avatar" data-initials="CG"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2025/09/Candace.jpg" alt="Candace Garcia" loading="lazy"></div>
-          <div class="name">Candace Garcia</div><div class="role">Compliance Officer</div>
-        </div>
-        <div class="person">
-          <div class="avatar" data-initials="AL"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2025/09/Agatha-Lesage-1.jpg" alt="Agatha Lesage" loading="lazy"></div>
-          <div class="name">Agatha Lesage</div><div class="role">Operations Strategist</div>
-        </div>
-        <div class="person">
-          <div class="avatar" data-initials="NB"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2025/09/Nadine.jpg" alt="Nadine Bernardin" loading="lazy"></div>
-          <div class="name">Nadine Bernardin</div><div class="role">Process Strategist</div>
-        </div>
-        <div class="person">
-          <div class="avatar" data-initials="QP"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2026/06/verity-04.webp" alt="Quan Pham" loading="lazy"></div>
-          <div class="name">Quan Pham</div><div class="role">Capital Growth Strategist</div>
-        </div>
-        <div class="person">
-          <div class="avatar" data-initials="TS"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2026/06/verity-10.webp" alt="Taran Sousa" loading="lazy"></div>
-          <div class="name">Taran Sousa</div><div class="role">Capital Growth Strategist</div>
-        </div>
-        <div class="person">
-          <div class="avatar" data-initials="MT"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2026/07/Moses-Thien-headshot-Title-Marketing-Strategist-1.png" alt="Moses Thien" loading="lazy"></div>
-          <div class="name">Moses Thien</div><div class="role">Marketing Strategist</div>
-        </div>
-        <div class="person">
-          <div class="avatar" data-initials="RP"><img src="https://www.veritylifesolutions.com/wp-content/uploads/2026/06/verity-06.webp" alt="Roman Pushkar" loading="lazy"></div>
-          <div class="name">Roman Pushkar</div><div class="role">Capital Growth Strategist</div>
-        </div>
+        <div class="person"><div class="avatar"><span>DC</span></div><div class="name">Daniel Carter</div><div class="role">Founder</div></div>
+        <div class="person"><div class="avatar"><span>PR</span></div><div class="name">Priya Raman</div><div class="role">Compliance Officer</div></div>
+        <div class="person"><div class="avatar"><span>MO</span></div><div class="name">Marcus Okafor</div><div class="role">Operations Strategist</div></div>
+        <div class="person"><div class="avatar"><span>EN</span></div><div class="name">Elena Novak</div><div class="role">Process Strategist</div></div>
+        <div class="person"><div class="avatar"><span>JR</span></div><div class="name">Jordan Reyes</div><div class="role">Financial Coach</div></div>
+        <div class="person"><div class="avatar"><span>SK</span></div><div class="name">Sofia Kim</div><div class="role">Client Experience Lead</div></div>
+        <div class="person"><div class="avatar"><span>TB</span></div><div class="name">Thomas Bennett</div><div class="role">Education Coordinator</div></div>
+        <div class="person"><div class="avatar"><span>AH</span></div><div class="name">Amara Haddad</div><div class="role">Client Coordinator</div></div>
       </div>
     </div>
   </section>
@@ -151,17 +127,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-// Team photo fallback -> initials (prevents broken images / 404s)
-document.querySelectorAll('.avatar img').forEach(function(img){
-  img.addEventListener('error', function(){
-    var a = img.parentElement;
-    img.remove();
-    var s = document.createElement('span');
-    s.textContent = a.getAttribute('data-initials') || '';
-    a.appendChild(s);
-  });
-});
-</script>
 </body>
 </html>
